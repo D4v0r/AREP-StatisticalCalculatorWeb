@@ -65,7 +65,7 @@ mvn test
 
 Integración continua usando la tecnología de CircleCi:
 
-[![CircleCI](https://circleci.com/gh/D4v0r/AREP-StatisticalCalculatorWeb.svg?style=svg)](https://circleci.com/gh/D4v0r/D4v0r/AREP-StatisticalCalculatorWeb)
+[![CircleCI](https://circleci.com/gh/D4v0r/AREP-StatisticalCalculatorWeb.svg?style=svg)](https://circleci.com/gh/D4v0r/AREP-StatisticalCalculatorWeb)
 
 
 ### Despliegue
