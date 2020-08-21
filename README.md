@@ -1,9 +1,9 @@
 # Calculadora Estadística Web
 
 > Arquitecturas Empresariales
-
+>
 > Laboratorio 2
-
+>
 > Heroku: Intérpretes, canales de comunicación y memoria
 
 Este repositorio contiene la implementación de una calculadora estadística, usando como colección una lista enlazada simple, con el propósito de poner en práctica el uso de las herramientas tecnológicas *Maven* y *Git*. Adicionalmente cuenta con el despliegue de la aplicación web para libre uso de la calculadora, gracias al uso de *Spark* y *Heroku*.
@@ -89,7 +89,7 @@ Este proyecto fue desarrollado con:
 ## Autor
 
 >Davor Javier Cortés Cardozo
-
+>
 >Estudiante de la Escuela Colombiana de Ingeniería Julio Garavito
 
 ## Licencia
