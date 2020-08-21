@@ -7,13 +7,22 @@ import spark.Request;
 import spark.Response;
 
 import  static spark.Spark.*;
+
 /**
+ * Web App main class.
  *
- *
+ *  @author Davor Cortés
+ *  @version 1.0
  */
 public class WebApp
 {
     private static StatisticalCalculator calculator = new StatisticalCalculator();
+
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main( String[] args )
     {
         port(getPort());
@@ -21,6 +30,14 @@ public class WebApp
         get("/results", WebApp::resultDataPage);
 
     }
+
+    /**
+     *  Generate Input Page
+     *
+     * @param req the request
+     * @param res the response
+     * @return
+     */
     private static String inputDataPage(Request req, Response res){
         String pageContent
                 = "<!DOCTYPE html>"
@@ -39,6 +56,14 @@ public class WebApp
         return pageContent;
     }
 
+    /**
+     * Generate Result Page
+     *
+     * @param request
+     * @param response
+     * @return
+     * @throws CalculatorException
+     */
     private static String resultDataPage(Request request, Response response) throws CalculatorException {
         LinkedList<Double> dataList = new LinkedList<>();
         for(String data : request.queryParams("input").split(" ")){
@@ -50,6 +75,9 @@ public class WebApp
 
     }
 
+    /**
+     * Get Link Port
+     */
     private static int getPort(){
         if (System.getenv("PORT") != null){
             return Integer.parseInt(System.getenv("PORT"));
